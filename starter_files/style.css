@@ -18,10 +18,22 @@ body {
   background-image: url("img/bg.jpg");
   font-family: Helvetica, Arial, sans-serif;
   line-height: 1.6;
+  max-width: 800px;
+  border: 3px solid #ffd24a;
+  border-radius: 5px;
+  box-shadow: 1px 3px 5px ;
+  margin-bottom: 40px;
+  margin: 40px auto;
+}
+
+section {
+  border-bottom: 4px solid #dddddd;
+  padding-top: 5px;
+  padding-bottom: 35px;
 }
 
 ul {
-
+  padding-left: 20px;
 }
 
 li {
@@ -37,20 +49,25 @@ hr {
   color: #eee;
 }
 
-/* #outer_border {
-  border: 3px solid #ffd24a;
-  border-radius: 5px;
-}*/
 .main_navigation {
   margin: 20px 0;
 }
 
 .main_navigation a {
-  border: 1px solid white;
+  border: 2px solid white;
   border-radius: 5px;
   padding: 10px 30px;
   color: white;
   text-decoration: none;
+  font-weight: bolder;
+}
+
+.main_navigation a:visited, a:link, a:hover, a:active {
+  color: white;
+}
+
+p a:visited, a:link, a:hover, a:active {
+  color: #1fabe5;
 }
 
 #logo img {
@@ -61,44 +78,25 @@ hr {
 #site_header {
   background-color: #ff8523;
   padding: 20px;
-  border: 3px solid #ffd24a;
-  border-radius: 5px;
-  border-bottom: 0;
 }
 
 #page_content {
   background-color: white;
   padding: 20px;
-  border: 3px solid #ffd24a;
-  border-radius: 5px;
-  border-top: 0;
-  box-shadow: 1px 3px 5px ;
 }
-
-h2 {
-  border-top: 4px solid #dddddd;
-  padding-top: 20px;
-  margin-top: 60px;
-}
-
-/*
-#page_content h2 {
-  border-top: 0px;
-}
-*/
 
 table {
   border-collapse: collapse;
 }
 
-thead {
-  border: 2px solid #046c97;
+thead td {
+  border: 1px solid #046c97;
   background-color: #1fabe5;
   color: white;
 }
 
 td {
-  border: 2px solid #1fabe5;
+  border: 1px solid #1fabe5;
   padding: 10px;
 }
 
@@ -109,16 +107,44 @@ img {
 form {
   border-radius: 5px;
   padding: 20px;
-  background-color: #eee
+  background-color: #eee;
+  font-weight: 600;
 }
 
 #submit_button {
-  border-radius: 1  5px;
-  padding: 15px;
+  border-radius: 5px;
+  border: 0px;
+  padding: 15px 20px;
   background-color: #1fabe5;
   color: white;
-  font-size: 20px;
+  font-size: 16px;
   text-transform: uppercase;
+}
+
+input[type=text] {
+  padding: 12px 20px;
+}
+
+label[for="last_name"] {
+  padding-left: 20px;
+}
+
+.city_container {
+  padding: 30px 0 20px;
+}
+
+#bio {
+  padding: 10px;
+  margin: 10px 0 15px;
+  border: 1px solid #1fabe5;
+  width: 700px;
+  height: 180px;
+  font-size: 16px;
+}
+
+label[for="bio"] {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
 .name {
@@ -126,9 +152,4 @@ form {
   background-color: #ff8523;
   color: white;
   padding: 20px;
-}
-
-#first_name, #last_name {
-  height: 30px;
-  width: 200px;
 }
